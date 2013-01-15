@@ -121,10 +121,11 @@ aside {
 			line-height: 1;
 		}
 		h1 {
-			font-size: 1.6em;
+			font-size: 1.4em;
 			text-align: left;
 			letter-spacing: -1px;
 			margin-bottom: 3px;
+			margin-top: 0px;
 		}
 	}
 }
@@ -132,7 +133,7 @@ aside {
 /* forms */
 input, textarea, select, .uneditable-input {
 	border: 1px solid #bbb;
-	with: 100%;
+	width: 100%;
 	padding: 10px;
 	height: auto;
 	margin-bottom: 15px;
@@ -163,6 +164,38 @@ input, textarea, select, .uneditable-input {
 		&:last-child {
 			border-bottom: 1px solid $grayLighter;
 		}
+	}
+}
+
+/* microposts */
+
+.microposts {
+	list-style: none;
+	margin: 10px 0 0 0;
+
+	li {
+		padding: 10px 0;
+		border-top: 1px solid #e8e8e8;
+	}
+}
+
+.content {
+	display: block;
+}
+
+.timestamp {
+	color: $grayLight;
+}
+
+.gravatar {
+	float: left;
+	margin-right: 10px;
+}
+
+aside {
+	textarea {
+		height: 100px;
+		margin-bottom: 5px;
 	}
 }
 
